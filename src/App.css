@@ -1,0 +1,209 @@
+body{
+  background: #282626
+}
+
+.App {
+  text-align: center;
+  p{
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #5a0404;
+  padding: 20px;
+  color: white;
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: transform 0.3s ease;
+}
+
+.hamburger-icon:hover {
+  transform: rotate(90deg);
+}
+
+.main-content{
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: white;
+  padding: 15px;
+  border-right: 1px solid #ddd;
+  height: 80vh;
+ /* position: fixed; */
+  /* left: -231px;
+  top: 0;
+  bottom: 0; */
+  transition: transform 0.3s ease, left 0.3s ease; 
+}
+
+.sidebar-visible {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.sidebar ul li:hover {
+  background-color: #eee;
+}
+
+.chat-box {
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 20px;
+  width: 365%;
+  p {
+    background: #6f0b0b;
+  border-radius: 5px;
+  width: 20%;
+  padding: 9px;
+  text-align: left;
+  font-size: 1.3rem;
+  color: white;
+  }
+}
+
+.chat-input{
+    margin-left: 123%;
+    display: block ruby;
+  }
+
+form {
+  input {
+    border-radius: 13px;
+    border: none;
+    background-color: #686464;
+  }
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  background: #4f0808;
+  border-radius: 9px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: grey;
+  transition: .5s;
+}
+
+.sign-in{
+  margin-top: 1rem;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Sign-up {
+  display: inline-grid;
+  margin-top: 3rem;
+  color: white;
+  text-align: left;
+  font-size: 1.2rem;
+  input {
+    background: #4f4949;
+    border: none;
+  }
+}
+
+.forgot-password {
+  margin-top: 8rem;
+  color: white;
+  display: flex;
+  input {
+    border-radius: 13px;
+    border: none;
+    background-color: #686464;
+  }
+}
+
+
+  .error {
+    color: red;
+  border: 2px solid red;
+  padding: 0.5rem;
+  border-radius: 13px;
+  background-color: #d57878;
+  }
+
+  .forgot-password-page { 
+    display: flex; 
+  } 
+  
+.forgot-password-content { 
+    flex: 1; 
+    padding: 20px;
+}
+
+.profile-info {
+  margin-left: 11rem;
+  margin-top: 8rem;
+}
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.notification strong {
+  display: block;
+  margin-bottom: 5px;
+}
